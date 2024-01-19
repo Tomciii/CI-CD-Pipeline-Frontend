@@ -9,6 +9,8 @@ import { AboutComponent } from './pages/about/about.component';
 import {NavbarComponent} from "./components/navbar/navbar.component";
 import {HttpClientModule} from "@angular/common/http";
 import { ArtComponent } from './components/art/art.component';
+import { AdminComponent } from './pages/admin/admin.component';
+import {FormsModule, NgModel} from "@angular/forms";
 
 
 @NgModule({
@@ -19,11 +21,13 @@ import { ArtComponent } from './components/art/art.component';
     NavbarComponent,
     GalleryComponent,
     ArtComponent,
+    AdminComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CommonModule,
+    FormsModule,
     NgFor,
     HttpClientModule,
   ],

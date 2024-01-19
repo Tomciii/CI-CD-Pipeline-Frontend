@@ -17,7 +17,7 @@ export class ArtFacade {
     return firstValueFrom(this.http.get<Art[]>(this.getAllArt));
 }
 
-  saveArt(art: Art): Observable<string> {
-    return this.http.post<string>(this.save, art)
+  saveArt(art: Art){
+    return this.http.post<Art>(this.save, art)
   }
 };
