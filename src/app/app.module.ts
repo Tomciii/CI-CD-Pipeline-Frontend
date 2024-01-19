@@ -8,6 +8,7 @@ import { GalleryComponent } from './pages/gallery/gallery.component';
 import { AboutComponent } from './pages/about/about.component';
 import {NavbarComponent} from "./components/navbar/navbar.component";
 import {HttpClientModule} from "@angular/common/http";
+import { ArtComponent } from './components/art/art.component';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import {HttpClientModule} from "@angular/common/http";
     AboutComponent,
     NavbarComponent,
     GalleryComponent,
+    ArtComponent,
   ],
   imports: [
     BrowserModule,

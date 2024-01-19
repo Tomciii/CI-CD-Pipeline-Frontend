@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import {firstValueFrom, Observable, tap} from 'rxjs';
-import { map } from 'rxjs/operators';
+import {firstValueFrom, Observable} from 'rxjs';
 import {Art} from "../model/art.model";
 
 

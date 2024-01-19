@@ -2,5 +2,5 @@ export interface Art {
   id: number;
   imageURL: string;
   text: string;
-  title: string;
+  name: string;
 }
