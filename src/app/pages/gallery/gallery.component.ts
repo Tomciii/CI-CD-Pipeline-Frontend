@@ -10,9 +10,10 @@ import {Art} from "../../model/art.model";
 })
 export class GalleryComponent implements OnInit {
 
-  artList: Observable<Art[]>;
+  artList: Observable<Art[]> = new Observable<Art[]>();
 
   constructor(private artFacade: ArtFacade) {
+    this.artList;
 }
 
   ngOnInit(): void {

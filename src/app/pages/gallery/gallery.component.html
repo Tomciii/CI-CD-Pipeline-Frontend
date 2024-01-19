@@ -1,5 +1,8 @@
 <app-navbar></app-navbar>
 <div class="gallery">
+  <div *ngFor="let art in artList | async">
+    <div>{{art.url}}</div>
+  </div>
 <img src="assets/img1.jpg">
 <img src="assets/img2.jpg">
 <img src="assets/img3.jpg">
