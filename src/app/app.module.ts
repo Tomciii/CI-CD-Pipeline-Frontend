@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {CommonModule, HashLocationStrategy, LocationStrategy} from '@angular/common';
+import {CommonModule, HashLocationStrategy, LocationStrategy, NgFor, NgForOf} from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -14,14 +14,15 @@ import {HttpClientModule} from "@angular/common/http";
   declarations: [
     AppComponent,
     HomeComponent,
-    GalleryComponent,
     AboutComponent,
     NavbarComponent,
+    GalleryComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CommonModule,
+    NgFor,
     HttpClientModule,
   ],
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],

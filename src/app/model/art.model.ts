@@ -1,5 +1,6 @@
 export interface Art {
-  imageUrl: string;
+  id: number;
+  imageURL: string;
   text: string;
   title: string;
 }

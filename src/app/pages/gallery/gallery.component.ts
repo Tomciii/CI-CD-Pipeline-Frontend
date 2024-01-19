@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
 import {ArtFacade} from "../../facades/art.facade";
-import {Observable} from "rxjs";
 import {Art} from "../../model/art.model";
 
 @Component({
@@ -10,12 +9,13 @@ import {Art} from "../../model/art.model";
 })
 export class GalleryComponent implements OnInit {
 
-  artList: Observable<Art[]> = new Observable<Art[]>();
+  artList: Art[] = [];
 
   constructor(private artFacade: ArtFacade) {
 }
 
-  ngOnInit(): void {
-    this.artList = this.artFacade.getArtList();
+  async ngOnInit(): Promise<void> {
+    this.artList = await this.artFacade.getArtList();
+    console.log(this.artList)
   }
 }
