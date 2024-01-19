@@ -12,6 +12,7 @@ The content will be:
 - A Home page
 - A Gallery Page
 - An About Page
+- An Admin Page
 
 # Backend
 The repository for the backend is here: https://github.com/Tomciii/CI-CD-Pipeline-Backend
