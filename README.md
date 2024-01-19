@@ -19,7 +19,8 @@ The backend will grab images from the MariaDB server.
 
 # Jenkins
 A local Jenkins running on port 8080 will be used for the CI/CD.  <br>
-Jenkins.war runnable via cmd command ```java -jar jenkins.war```
+Jenkins.war runnable via cmd command ```java -jar jenkins.war``` <br>
+2 Separate Jenkinsfiles for the backend and frontend are set up
 
 # Apache Web Server:
 Also locally running, an Apache Web Server will deploy the frontend, triggered by the local Jenkins.  <br>
