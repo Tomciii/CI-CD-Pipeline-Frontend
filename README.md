@@ -5,12 +5,16 @@ For the sake of content, this frontend app will be a Gallery of Thomas' Art and 
 Structure of the project:
 
 # Frontend
+The repository for the backend is here: https://github.com/Tomciii/CI-CD-Pipeline-Frontend
 The repository consists of a Angular Frontend project including a Jenkinsfile. The frontend should be containerized via Docker.
 
 The content will be:
 - A Home page
 - A Gallery Page
 - An About Page
+
+# Backend
+The repository for the backend is here: https://github.com/Tomciii/CI-CD-Pipeline-Backend
 
 # Jenkins
 A local Jenkins running on port 8080 will be used for the CI/CD.  <br>
@@ -21,3 +25,7 @@ Also locally running, an Apache Web Server will deploy the frontend, triggered b
 The services are required to be running for the deployment to work properly. <br>
 Master Branch: Apache Service running locally on ```127.0.0.1:80``` <br>
 Every Other Branch: Apache Service running locally on ```127.0.0.1:81``` <br>
+
+# Tomcat Backend Server:
+Also locally running, the Apache Tomcat Server deploys the backend application. <br>
+The deployed .war file is running locally on ```localhost:8085/application/```
