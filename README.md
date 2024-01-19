@@ -1,4 +1,4 @@
-# "How can a CI/CD workflow be effectively implemented using Jenkins for web development projects?"
+# "How can a CI/CD workflow be effectively implemented using Jenkins for web applications?"
 This is the question I will try to solve with this repository. Project is done for my planned upcoming bachelor thesis with the research question above.  <br>
 For the sake of content, this frontend app will be a Gallery of Thomas' Art and Paintings. (https://www.instagram.com/tomcii/)
 
