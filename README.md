@@ -29,3 +29,7 @@ Every Other Branch: Apache Service running locally on ```127.0.0.1:81``` <br>
 # Tomcat Backend Server:
 Also locally running, the Apache Tomcat Server deploys the backend application. <br>
 The deployed .war file is running locally on ```localhost:8085/application/```
+
+# MariaDB Repository
+Images from the Backend are stored in a MariaDB repository <br>
+The MariaDB server is running on ```192.168.0.120:3307/rfid```
