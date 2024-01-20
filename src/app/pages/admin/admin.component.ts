@@ -9,6 +9,7 @@ import {Art} from "../../model/art.model";
 })
 export class AdminComponent {
   art: Art = { id: Math.random(), imageURL: '', name: '', text: '' };
+  index: number = 0;
 
   constructor(private artFacade: ArtFacade) {}
 
@@ -21,5 +22,9 @@ export class AdminComponent {
       console.log(this.art)
       console.log('Please fill in all required fields.');
     }
+  }
+
+  delete() {
+
   }
 }
