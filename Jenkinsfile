@@ -2,7 +2,7 @@ pipeline {
     agent any
 
    triggers {
-          pollSCM('H 0 * * *')
+          pollSCM('* * * * *')
       }
     stages {
         stage('Checkout') {
@@ -86,9 +86,9 @@ pipeline {
         stage('Send Mail') {
                     steps {
                         script {
-                         mail to: 'Tomciiart@gmail.com',
-                                       subject: "Jenkins Job ${env.JOB_NAME} - Build #${env.BUILD_NUMBER}",
-                                       body: "The Jenkins job has completed.\n\nCheck the build at ${env.BUILD_URL}"
+                                       mail to: 'Tomciiart@gmail.com',
+                                           subject: "Jenkins Job ${env.JOB_NAME} - Build #${env.BUILD_NUMBER}",
+                                           body: "The Jenkins job has completed.\n\nCheck the build at ${env.BUILD_URL}"
                                     }
                     }
                 }
