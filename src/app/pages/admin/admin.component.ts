@@ -9,7 +9,7 @@ import {Art} from "../../model/art.model";
 })
 export class AdminComponent {
   art: Art = { id: Math.random(), imageURL: '', name: '', text: '' };
-  index: number = 0;
+  index: string = '';
 
   constructor(private artFacade: ArtFacade) {}
 
@@ -25,6 +25,9 @@ export class AdminComponent {
   }
 
   delete() {
-
+if (this.index) {
+  let intNumber: number = parseInt(this.index);
+  this.artFacade.delete(intNumber);
+}
   }
 }

@@ -10,6 +10,7 @@ import {Art} from "../model/art.model";
 export class ArtFacade {
   private getAllArt = 'http://localhost:8085/application/public/api/getAllArt';
   private save = 'http://localhost:8085/application/public/api/save'
+  private deleteUrl = 'http://localhost:8085/application/public/api/delete'
 
   constructor(private http: HttpClient) {}
 
@@ -19,5 +20,9 @@ export class ArtFacade {
 
   saveArt(art: Art){
     return this.http.post<Art>(this.save, art)
+  }
+
+  delete(int: number) {
+    return this.http.post(this.deleteUrl, int);
   }
 };

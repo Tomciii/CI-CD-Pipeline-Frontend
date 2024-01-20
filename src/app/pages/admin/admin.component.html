@@ -14,4 +14,10 @@
 
     <button (click)="saveArt()">Save Art</button>
   </div>
+  <h2>Delete image</h2>
+  <div>
+    <label>Index:</label>
+    <input type="text" id="index" [(ngModel)]="index" />
+    <button (click)="delete()">Delete Art</button>
+  </div>
 </div>
